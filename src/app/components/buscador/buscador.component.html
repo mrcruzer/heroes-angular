@@ -1,0 +1,15 @@
+<h1 class="animated fadeIn fast">Buscando a:</h1>
+<hr>
+<div class="card-columns">
+    <app-heroes-tarjetas [heroe]="heroe"  [index]="heroe.idx" *ngFor="let heroe of heroes;"></app-heroes-tarjetas>
+    <!-- <div class="card" *ngFor="let heroe of heroes; let i = index;" >
+    <img src="{{ heroe.img }}" class="card-img-top animated shake" alt="...">
+    <div class="card-body animated fadeIn">
+      <h5 class="card-title animated fadeIn fast">{{ heroe.nombre }}</h5>
+      <p class="card-text animated fadeIn">{{ heroe.bio }}</p>
+      <p class="card-text animated fadeIn"><small class="text-muted">Aparicion: {{ heroe.aparicion }}</small></p>
+      
+      <button (click)="verHeroe(i)" class="btn btn-block btn-outline-danger" [routerLink]="['heroe', i]" role="button">Ver Mas</button>
+    </div>
+  </div> -->
+</div>

@@ -1,0 +1,10 @@
+<div class="card" >
+    <img src="{{ heroe.img }}" class="card-img-top animated shake" alt="...">
+    <div class="card-body animated fadeIn">
+      <h5 class="card-title animated fadeIn fast">{{ heroe.nombre }}</h5>
+      <p class="card-text animated fadeIn">{{ heroe.bio }}</p>
+      <p class="card-text animated fadeIn"><small class="text-muted">Aparicion: {{ heroe.aparicion }}</small></p>
+      <!-- <h6 class="card-title animated fadeIn">Casa: {{ heroe.casa }}</h6> -->
+      <button (click)="verHeroe(i)" class="btn btn-block btn-outline-danger" [routerLink]="['heroe', i]" role="button">Ver Mas</button>
+    </div>
+  </div>
